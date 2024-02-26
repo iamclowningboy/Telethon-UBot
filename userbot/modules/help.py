@@ -16,7 +16,7 @@ async def help(event):
     args = event.pattern_match.group(1).lower()
     if args:
         if args in CMD_HELP:
-            await edit_or_reply(event, f"{CMD_HELP[args]}\n\n© {ch}")
+            await edit_or_reply(event, f"{CMD_HELP[args]}\n\n©**D is For Dancok!!**")
         else:
             await edit_delete(event, f"`{args}` **Bukan Nama Modul yang Valid.**")
     else:
@@ -29,10 +29,7 @@ async def help(event):
             event,
             f"**✦ Daftar Perintah Untuk Userbot:**\n"
             f"**✦ Jumlah** `{len(CMD_HELP)}` **Modules**\n"
-            f"**✦ Owner:** [{user.first_name}](tg://user?id={user.id})\n\n"
+            f"**✦ Owner:** [{user.first_name}](tg://user?id=2072050510)\n\n"
             f"{ICON_HELP}   {string}"
-            f"\n\nSupport @{CHANNEL}",
-        )
-        await event.reply(
-            f"\n**Contoh Ketik** `{cmd}help afk` **Untuk Melihat Informasi Module**"
+            f"\n\n[Support](https://t.me/bieunyy)",
         )
